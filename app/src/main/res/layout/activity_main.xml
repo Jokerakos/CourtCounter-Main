@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.courtcounter.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#a3a3a3"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/logo" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#000000"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:text="Summoner 1"
+                    android:textColor="#a9a9a9"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"
+                    android:layout_marginEnd="1dp"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="20"
+                    android:textColor="#ffffff"
+                    android:textSize="56sp"
+                    android:textStyle="bold"
+                    tools:ignore="UnusedAttribute"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alive"
+                    android:textAlignment="center"
+                    android:id="@+id/aliveA"
+                    android:textColor="#ffffff"
+                     />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:onClick="loseLifeA"
+                        android:text="Lose life"
+
+                        tools:ignore="ButtonStyle" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:onClick="gainLifeA"
+                        android:text="gain life"
+
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/manaA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="1dp"
+                    android:background="#000000"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal"
+                    android:text="Mana Available"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="minusManaA"
+                        android:text="@string/minus"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/team_a_mana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="plusManaA"
+                        android:text="+"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tokenA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:background="#000000"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="Tokens"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="minusTokenA"
+                        android:text="-"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/team_a_token"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="plusTokenA"
+                        android:text="+"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Summoner 2"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#a9a9a9"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="1dp"
+                    android:textStyle="bold|italic"
+                    android:background="#000000"
+                    />
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="20"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="6dp"
+                    android:textSize="56dp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alive"
+                    android:textAlignment="center"
+                    android:id="@+id/aliveB"
+                    android:textColor="#ffffff"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button1b"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="lose life"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"
+                    android:onClick="loseLifeB"
+                    />
+                <Button
+                    android:id="@+id/button2b"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="gain life"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2dp"
+                    android:onClick="gainLifeB"
+                    />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/manaB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Mana Available"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:background="#000000"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginLeft="1dp"
+                    android:textStyle="bold|italic"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button3b"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:onClick="minusManaB"
+                        android:textSize="25sp"
+                        />
+                    <TextView
+                        android:id="@+id/team_b_mana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="bold"
+                        />
+                    <Button
+                        android:id="@+id/button4b"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:onClick="plusManaB"
+                        android:textSize="25sp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tokenB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tokens"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:background="#000000"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginLeft="1dp"
+                    android:textStyle="bold|italic"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button5b"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:onClick="minusTokenB"
+                        android:textSize="25sp"
+                        />
+                    <TextView
+                        android:id="@+id/team_b_token"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="24dp"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:fontFamily="sans-serif-light"
+                        android:textStyle="bold"
+                        />
+                    <Button
+                        android:id="@+id/button6b"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:onClick="plusTokenB"
+                        android:textSize="25sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/reset"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="0"
+            android:text="Reset Game"
+            android:onClick="reset"
+            android:layout_gravity="center_horizontal|center"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
