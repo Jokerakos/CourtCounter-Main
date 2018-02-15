@@ -4,33 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.admin.courtcounter.MainActivity">
+  
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#a3a3a3"
-        >
+        android:background="#a3a3a3">
+        
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.2"
-
             android:layout_marginTop="16dp"
             android:contentDescription="@string/logo" />
+        
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:orientation="horizontal"
             android:layout_weight="1"
             android:baselineAligned="false">
-
+            
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
                 tools:ignore="NestedWeights">
-
+                
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -45,7 +46,7 @@
                     android:textStyle="bold|italic"
                     android:layout_marginEnd="1dp"
                     tools:targetApi="jelly_bean" />
-
+                
                 <TextView
                     android:id="@+id/team_a_score"
                     android:layout_width="match_parent"
@@ -60,21 +61,20 @@
                     android:textStyle="bold"
                     tools:ignore="UnusedAttribute"
                     tools:targetApi="jelly_bean" />
-
+                
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Alive"
                     android:textAlignment="center"
                     android:id="@+id/aliveA"
-                    android:textColor="#ffffff"
-                     />
+                    android:textColor="#ffffff"  />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
+                 
                     <Button
                         android:id="@+id/button1"
                         android:layout_width="0dp"
@@ -87,9 +87,8 @@
                         android:layout_weight="1"
                         android:onClick="loseLifeA"
                         android:text="Lose life"
-
                         tools:ignore="ButtonStyle" />
-
+                
                     <Button
                         android:id="@+id/button2"
                         android:layout_width="0dp"
@@ -101,11 +100,9 @@
                         android:layout_marginTop="8dp"
                         android:layout_weight="1"
                         android:onClick="gainLifeA"
-                        android:text="gain life"
-
-                        />
+                        android:text="gain life" />
                 </LinearLayout>
-
+               
                 <TextView
                     android:id="@+id/manaA"
                     android:layout_width="match_parent"
@@ -119,12 +116,12 @@
                     android:textColor="#ffffff"
                     android:textSize="20sp"
                     android:textStyle="bold|italic" />
-
+             
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
+                
                     <Button
                         android:id="@+id/button3"
                         android:layout_width="0dp"
@@ -133,7 +130,7 @@
                         android:onClick="minusManaA"
                         android:text="@string/minus"
                         android:textSize="25sp" />
-
+                  
                     <TextView
                         android:id="@+id/team_a_mana"
                         android:layout_width="wrap_content"
@@ -146,7 +143,7 @@
                         android:textColor="#ffffff"
                         android:textSize="20sp"
                         android:textStyle="bold"/>
-
+              
                     <Button
                         android:id="@+id/button4"
                         android:layout_width="0dp"
@@ -156,7 +153,7 @@
                         android:text="+"
                         android:textSize="25sp" />
                 </LinearLayout>
-
+              
                 <TextView
                     android:id="@+id/tokenA"
                     android:layout_width="match_parent"
@@ -169,12 +166,12 @@
                     android:textColor="#ffffff"
                     android:textSize="20sp"
                     android:textStyle="bold|italic" />
-
+             
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
+               
                     <Button
                         android:id="@+id/button5"
                         android:layout_width="0dp"
@@ -183,7 +180,7 @@
                         android:onClick="minusTokenA"
                         android:text="-"
                         android:textSize="25sp" />
-
+              
                     <TextView
                         android:id="@+id/team_a_token"
                         android:layout_width="wrap_content"
@@ -198,7 +195,7 @@
                         android:textColor="#ffffff"
                         android:textSize="20sp"
                         android:textStyle="bold"/>
-
+                
                     <Button
                         android:id="@+id/button6"
                         android:layout_width="0dp"
@@ -208,20 +205,21 @@
                         android:text="+"
                         android:textSize="25sp" />
                 </LinearLayout>
-
             </LinearLayout>
-
+         
             <LinearLayout
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/darker_gray"
                 android:layout_marginTop="16dp">
             </LinearLayout>
+          
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight="1">
+             
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -233,8 +231,8 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginLeft="1dp"
                     android:textStyle="bold|italic"
-                    android:background="#000000"
-                    />
+                    android:background="#000000" />
+              
                 <TextView
                     android:id="@+id/team_b_score"
                     android:layout_width="match_parent"
@@ -246,20 +244,21 @@
                     android:textSize="56sp"
                     android:textColor="#ffffff"
                     android:fontFamily="sans-serif-light"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
+             
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Alive"
                     android:textAlignment="center"
                     android:id="@+id/aliveB"
-                    android:textColor="#ffffff"
-                    />
+                    android:textColor="#ffffff"/>
+            
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+           
                 <Button
                     android:id="@+id/button1b"
                     android:layout_height="wrap_content"
@@ -270,8 +269,8 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="2dp"
-                    android:onClick="loseLifeB"
-                    />
+                    android:onClick="loseLifeB" />
+              
                 <Button
                     android:id="@+id/button2b"
                     android:layout_height="wrap_content"
@@ -282,9 +281,9 @@
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="4dp"
                     android:layout_marginRight="2dp"
-                    android:onClick="gainLifeB"
-                    />
+                    android:onClick="gainLifeB" />
                 </LinearLayout>
+              
                 <TextView
                     android:id="@+id/manaB"
                     android:layout_width="match_parent"
@@ -297,13 +296,13 @@
                     android:background="#000000"
                     android:fontFamily="sans-serif-light"
                     android:layout_marginLeft="1dp"
-                    android:textStyle="bold|italic"
-                    />
+                    android:textStyle="bold|italic" />
+               
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
+                 
                     <Button
                         android:id="@+id/button3b"
                         android:layout_height="wrap_content"
@@ -311,8 +310,8 @@
                         android:layout_weight="1"
                         android:text="-"
                         android:onClick="minusManaB"
-                        android:textSize="25sp"
-                        />
+                        android:textSize="25sp" />
+                
                     <TextView
                         android:id="@+id/team_b_mana"
                         android:layout_width="wrap_content"
@@ -324,8 +323,8 @@
                         android:textSize="20sp"
                         android:textColor="#ffffff"
                         android:fontFamily="sans-serif-light"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
+                
                     <Button
                         android:id="@+id/button4b"
                         android:layout_height="wrap_content"
@@ -333,10 +332,9 @@
                         android:layout_weight="1"
                         android:text="+"
                         android:onClick="plusManaB"
-                        android:textSize="25sp"
-                        />
+                        android:textSize="25sp" />
                 </LinearLayout>
-
+            
                 <TextView
                     android:id="@+id/tokenB"
                     android:layout_width="match_parent"
@@ -348,13 +346,13 @@
                     android:background="#000000"
                     android:fontFamily="sans-serif-light"
                     android:layout_marginLeft="1dp"
-                    android:textStyle="bold|italic"
-                    />
+                    android:textStyle="bold|italic" />
+             
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
+                
                     <Button
                         android:id="@+id/button5b"
                         android:layout_height="wrap_content"
@@ -362,8 +360,8 @@
                         android:layout_weight="1"
                         android:text="-"
                         android:onClick="minusTokenB"
-                        android:textSize="25sp"
-                        />
+                        android:textSize="25sp" />
+             
                     <TextView
                         android:id="@+id/team_b_token"
                         android:layout_width="wrap_content"
@@ -377,8 +375,8 @@
                         android:textSize="20sp"
                         android:textColor="#ffffff"
                         android:fontFamily="sans-serif-light"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
+                 
                     <Button
                         android:id="@+id/button6b"
                         android:layout_height="wrap_content"
@@ -386,11 +384,11 @@
                         android:layout_weight="1"
                         android:text="+"
                         android:onClick="plusTokenB"
-                        android:textSize="25sp"
-                        />
+                        android:textSize="25sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+       
         <Button
             android:id="@+id/reset"
             android:layout_height="wrap_content"
@@ -398,7 +396,6 @@
             android:layout_weight="0"
             android:text="Reset Game"
             android:onClick="reset"
-            android:layout_gravity="center_horizontal|center"
-            />
+            android:layout_gravity="center_horizontal|center" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
